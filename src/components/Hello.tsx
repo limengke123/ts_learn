@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 interface HelloProps {
     compiler: string,
@@ -7,7 +7,7 @@ interface HelloProps {
 
 const Hello = (props:HelloProps) => (
     <h1>
-        hello from {props.complier} and {props.framework}
+        hello from {props.compiler} and {props.framework}
     </h1>
 )
 
