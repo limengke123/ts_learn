@@ -26,4 +26,9 @@ webpack配置
 
 ![解决方案](issues/path-issue/resolve.png)
 
+## props报错
+
+参数不对
+
+![props报错](issues/props/props.png)
 
