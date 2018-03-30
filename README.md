@@ -1,3 +1,8 @@
 # 一个react的typescript样例
 
-后续试试ts测试的react
+搭建一个用typescript的react项目，现在踩坑方便日后搭建项目拿来参考。
+
+## 问题总结
+
+[issue]()
+

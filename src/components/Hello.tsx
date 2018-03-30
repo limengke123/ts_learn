@@ -1,14 +1,28 @@
 import * as React from 'react'
 
-interface HelloProps {
-    compiler: string,
-    framework: string
+export interface HelloProps {
+    name: string,
+    enthusiasmLevel?: number
 }
 
-const Hello = (props:HelloProps) => (
-    <h1>
-        hello from {props.compiler} and {props.framework}
-    </h1>
-)
+export default class Hello extends React.Component<HelloProps,object>{
+    render() {
+        const { name, enthusiasmLevel = 1 } = this.props;
 
-export default Hello
+        if (enthusiasmLevel <= 0) {
+            throw new Error('You could be a little more enthusiastic. :D');
+        }
+
+        return (
+            <div className="hello">
+                <div className="greeting">
+                    Hello {name + getExclamationMarks(enthusiasmLevel)}
+                </div>
+            </div>
+        );
+    }
+}
+
+function getExclamationMarks(numChars: number) {
+    return Array(numChars + 1).join('!');
+}

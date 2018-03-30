@@ -3,12 +3,12 @@ const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry:{
-        app:join(__dirname,'../src/index.js')
+        app:join(__dirname,'../src/index.tsx')
     },
     output:{
         filename:'js/[name].js',
         path:join(__dirname,'../dist'),
-        publicPath: "/public/",
+        publicPath: "./",
         chunkFilename: "chunk/[name].[chunkhash:8].js"
     },
     resolve:{
@@ -25,11 +25,11 @@ module.exports = {
                 test:/\.js$/,
                 loader:"source-map-loader"
             },
-            {
-                test:/\.(js)|(jsx)$/,
-                loader:'babel-loader',
-                include:join(__dirname,'../src')
-            },
+            // {
+            //     test:/\.(js)|(jsx)$/,
+            //     loader:'babel-loader',
+            //     include:join(__dirname,'../src')
+            // },
             {
                 test:/\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader:'url-loader',

@@ -27,9 +27,9 @@ const config = webpackMerge(baseConfig,{
             }
         ]
     },
-    devtool:"#cheap-module-eval-source-map",
+    devtool:"source-map",
     devServer:{
-        port:8001,
+        port:8002,
         host:"0.0.0.0",
         overlay:{
             errors:true
