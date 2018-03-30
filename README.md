@@ -4,5 +4,5 @@
 
 ## 问题总结
 
-[issue]()
+[issue](https://github.com/limengke123/ts_learn/blob/master/issue.md)
 
