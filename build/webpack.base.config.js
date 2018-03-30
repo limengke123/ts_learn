@@ -12,7 +12,7 @@ module.exports = {
         chunkFilename: "chunk/[name].[chunkhash:8].js"
     },
     resolve:{
-        extensions:['.ts','tsx','.jsx','.js','.json']
+        extensions:['.ts','.tsx','.jsx','.js','.json']
     },
     module: {
         rules: [

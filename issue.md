@@ -20,8 +20,10 @@ webpack配置
 
 ![打包结果](issues/path-issue/build-result.jpg)
 
-原因：暂未发现
+原因：~~暂未发现~~ webpack配置的时候在`reoslve`中的`tsx`中少加了一个点`.`
 
-解决方案：暂无
+解决方案：~~暂无~~ `tsx`修正为`.tsx`
+
+![解决方案](issues/path-issue/resolve.png)
 
 
