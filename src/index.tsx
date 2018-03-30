@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as ReactDom from 'react-dom'
 
-import Hello from './components/Hello'
+import App from './components/App'
 
 
 const root = document.createElement('div')
@@ -9,6 +9,6 @@ const root = document.createElement('div')
 document.body.appendChild(root)
 
 ReactDom.render(
-    <Hello name="typescript" enthusiasmLevel={10}/>,
+    <App name="typescript" enthusiasmLevel={10}/>,
     root as HTMLElement
 )
