@@ -3,7 +3,12 @@ import * as ReactDom from 'react-dom'
 
 import Hello from './components/Hello'
 
+
+const root = document.createElement('div')
+
+document.body.appendChild(root)
+
 ReactDom.render(
     <Hello name="typescript" enthusiasmLevel={10}/>,
-    document.getElementById("example") as HTMLElement
+    root as HTMLElement
 )
