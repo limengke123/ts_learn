@@ -9,6 +9,6 @@ const root = document.createElement('div')
 document.body.appendChild(root)
 
 ReactDom.render(
-    <App name="typescript" enthusiasmLevel={10}/>,
+    <App/>,
     root as HTMLElement
 )
