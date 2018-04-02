@@ -6,7 +6,8 @@
 
 ## antd学习模仿
 
-1. icon
+- [x] icon
+- [ ] button
 
 ## 问题总结
 

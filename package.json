@@ -37,6 +37,7 @@
     "optimize-css-assets-webpack-plugin": "^4.0.0",
     "ora": "^2.0.0",
     "postcss-loader": "^2.1.3",
+    "prop-types": "^15.6.1",
     "rimraf": "^2.6.2",
     "source-map-loader": "^0.2.3",
     "style-loader": "^0.20.3",
