@@ -1,16 +1,18 @@
 import * as React from 'react'
 
-export interface Props {
-    name?:string
+export namespace Error {
+    export interface Props{
+        name?:string
+    }
+
+    export interface State{
+        hasError:boolean
+    }
 }
 
-export interface State {
-    hasError:boolean
-}
-
-export default class ErrorBoundaries extends React.Component<Props, State>{
-    constructor(props:Props){
-        super(props)
+export default class ErrorBoundaries extends React.Component<Error.Props, Error.State>{
+    constructor(props:Error.Props,context?:any){
+        super(props, context)
         this.state = {
             hasError:false
         }
