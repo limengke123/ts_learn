@@ -1,18 +1,11 @@
 import * as React from 'react'
 
-import Icon from './icon/index'
-
-import ErrorBoundaries from './errorBoundaries'
-
-
 export default class App extends React.Component<{}, {}> {
-    render(){
+    render() {
         return (
-            <ErrorBoundaries>
-                <div>
-                    <Icon type="link"/>
-                </div>
-            </ErrorBoundaries>
+            <div>
+                <div>hello world</div>
+            </div>
         )
     }
 }

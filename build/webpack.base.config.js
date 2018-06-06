@@ -3,7 +3,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry:{
-        app:join(__dirname,'../src/button.tsx')
+        app:join(__dirname,'../src/index.tsx')
     },
     output:{
         filename:'js/[name].js',
