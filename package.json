@@ -22,6 +22,7 @@
   "dependencies": {
     "@types/react": "^16.0.41",
     "@types/react-dom": "^16.0.4",
+    "axios": "^0.18.0",
     "omit.js": "^1.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
